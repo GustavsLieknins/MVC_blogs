@@ -21,6 +21,7 @@ class BlogController {
         // var_dump($_POST);
         $post = Blog::create($_POST["content"]);
         // $content = $_POST["content"];
+        header("Location: /");
       }
 
       public function edit() {
@@ -31,11 +32,13 @@ class BlogController {
 
       public function update() {
         $post = Blog::save($_POST["content"],$_POST["id"]);
+        header("Location: /");
       }
 
       public function destroy()
       {
         $post = Blog::delete($_GET["id"]);
+        header("Location: /");
       }
          
 }

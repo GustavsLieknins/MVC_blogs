@@ -6,6 +6,13 @@
   <title>Visi ieraksti</title>
 </head>
 <body>
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/create">Create</a></li>
+  </ul>
+</nav>
+
   <h1>Visi bloga ieraksti</h1>
     <ul>
     <?php foreach ($posts as $post) { ?>
